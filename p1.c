@@ -1,3 +1,6 @@
+
+/* Counting the number of palindromes in an array of strings given by the user*/
+
 #include<stdio.h>
 #include<string.h>
 
