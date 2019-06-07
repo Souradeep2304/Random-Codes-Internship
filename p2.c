@@ -7,6 +7,7 @@ void main()
 {
 int n2=0;
 char new[]="Hello maam my name is oso. amma";
+//gets(new);
 int l=strlen(new);
 //char sep[]=" ";
 char sep[]=",. ";
