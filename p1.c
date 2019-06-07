@@ -1,4 +1,3 @@
-
 /* Counting the number of palindromes in an array of strings given by the user*/
 
 #include<stdio.h>
@@ -38,7 +37,7 @@ for ( j = l - 1; j >= 0; j--)
 		k++;
 		
   	}
-t[k]='\0';
+t[k]='\0';				//mark the end of the string 
 					//comparing the reversed and actual string
 for(int o=0;o<l;o++)
 {
