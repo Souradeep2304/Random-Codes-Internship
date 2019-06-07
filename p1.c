@@ -11,7 +11,7 @@ int n1;
 int n2=0;
 
 
-//taking in the strings
+					//taking in the strings
 printf("Enter the number of strings in the array:");
 scanf("%d",&n1);
 for(int i=0; i<n1;i++)
@@ -19,12 +19,8 @@ for(int i=0; i<n1;i++)
 printf("Enter string number %d:",i+1);
 scanf("%s",s[i]);
 }
-//printing the strings
-/*for(int i=0; i <n1;i++)
-{
-printf("%s\n1",s[i]);
-}
-*/
+
+					//checking palindrome
 
 for(int i=0; i<n1;i++)
 {
@@ -34,6 +30,7 @@ char t[100];
 char p[100];
 strcpy(p,s[i]);
 l=strlen(p);
+					//reversing the string
 for ( j = l - 1; j >= 0; j--)
   	{
 		
@@ -42,6 +39,7 @@ for ( j = l - 1; j >= 0; j--)
 		
   	}
 t[k]='\0';
+					//comparing the reversed and actual string
 for(int o=0;o<l;o++)
 {
 if(t[o]==p[o])
@@ -51,9 +49,9 @@ f=1;
 }
 if(f==0)
 {
-printf("%s is palindrom.\n",p);
-n2++;
+printf("%s is palindrome.\n",p);
+n2++; 					//counting the number of palindromes
 }
 }
-printf("Number of Palindrome Numbers:%d\n",n2);
+printf("Number of Palindromes:%d\n",n2);
 }
