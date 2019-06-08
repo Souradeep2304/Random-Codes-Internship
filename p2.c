@@ -2,7 +2,9 @@
 
 #include<stdio.h>
 #include<string.h>
-
+char longeststring[100];			//longest palindrome
+int longest;
+int final=0;
 void main()
 {
 int number_of_palindromes=0;
@@ -11,11 +13,9 @@ char paragraph[]="I maam my name is oso. amma %  121  I";
 //char sep[]=" ";
 char sep[]=",. ";			//seperator
 char *tokens=strtok(paragraph,sep);
-while(tokens!=NULL)
-
-					//checking palindrome
+while(tokens!=NULL)			//checking palindrome
 {
-int j;
+int j;	
 int k=0,len,f=0;			//k is the size of temporary character array to store reversed word, l is to store length, f is flag
 char temp[100];				//to store reversed word
 char org[100];				//to store original word
@@ -42,9 +42,17 @@ f=1;
 if(f==0)
 {
 printf("%s is palindrome.\n",org);
+longest=strlen(temp);
+					//longest palindrome
+if(longest>final)
+{
+strcpy(longeststring,temp);
+final=longest;
+}
 number_of_palindromes++; 		//counting the number of palindromes
 }
 tokens=strtok(NULL,sep);
 }
 printf("Number of Palindromes:%d\n",number_of_palindromes);
+printf("Longest Palidrome:%s\n",longeststring);
 }
