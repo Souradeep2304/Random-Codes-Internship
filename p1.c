@@ -5,52 +5,53 @@
 
 void main()
 {
-char s[100][100];
-int n1;
-int n2=0;
+char string[100][100];
+int number_of_strings;
+int number_of_palindromes=0;
 
 
 					//taking in the strings
 printf("Enter the number of strings in the array:");
-scanf("%d",&n1);
-for(int i=0; i<n1;i++)
+scanf("%d",&number_of_strings);
+for(int i=0; i<number_of_strings;i++)
 {
 printf("Enter string number %d:",i+1);
-scanf("%s",s[i]);
+scanf("%s",string[i]);
 }
 
 					//checking palindrome
 
-for(int i=0; i<n1;i++)
+for(int i=0; i<number_of_strings;i++)
 {
 int j;
-int k=0,l,f=0;
-char t[100];
-char p[100];
-strcpy(p,s[i]);
-l=strlen(p);
+int k=0,len,f=0;			//k is the size of temporary character array to store reversed word, l is to store length, f is flag
+char temp[100];				//to store reversed word
+char org[100];				//to store original word
+strcpy(org,string[i]);
+len=strlen(org);
+
 					//reversing the string
-for ( j = l - 1; j >= 0; j--)
+for ( j = len - 1; j >= 0; j--)
   	{
 		
-  		t[k] = p[j];
+  		temp[k] = org[j];
 		k++;
 		
   	}
-t[k]='\0';				//mark the end of the string 
+temp[k]='\0';				//mark the end of the string 
 					//comparing the reversed and actual string
-for(int o=0;o<l;o++)
+for(int o=0;o<len;o++)
 {
-if(t[o]==p[o])
+if(temp[o]==org[o])                     //tolower() to ignore case
 {f=0;}
 else
 f=1;
 }
 if(f==0)
 {
-printf("%s is palindrome.\n",p);
-n2++; 					//counting the number of palindromes
+printf("%s is palindrome.\n",org);
+number_of_palindromes++; 		//counting the number of palindromes
 }
 }
-printf("Number of Palindromes:%d\n",n2);
+printf("Number of Palindromes:%d\n",number_of_palindromes);
 }
