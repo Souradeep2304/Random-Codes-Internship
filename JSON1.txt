@@ -1,6 +1,6 @@
 {
-	"Candidate Resume": {
-		"Candidate Resume 1": {
+	"CandidateResume": [{
+		 
 			"Personal data": {
 				"name": {
 					"first name": "Souradeep",
@@ -12,35 +12,36 @@
 			"Exposure": [{
 				"Company Name": "AIS",
 				"Number of Months": "2",
-				"Designation": "Interns"
+				"Designation": "Intern"
 			}],
-			"Skills": [{
-				"Programming": ["C++", "Java"],
-				"Design": ["Photoshop", "CAD"],
+			"Skills": {
+				"Programming": ["C++","Go"],
+				"Design": null,
 				"Languages": ["English", "Hindi", "Bengali", "French"]
 
-			}]
-		}
-	},
-	"Candidate Resume 2": {
-		"Personal data": {
-			"name": {
-				"first name": "Raj",
-				"last name": "Sharma"
-			},
-			"DoB": "20-05-1997",
-			"Birth Place": "Mumbai"
+			}
 		},
-		"Exposure": [{
-			"Company Name": "XYZ",
-			"Number of Months": "6",
-			"Designation": "ABC"
-		}],
-		"Skills": [{
-			"Programming": ["Python", "Go"],
-			"Design": ["Photoshop"],
-			"Languages": ["English", "Hindi"]
 
-		}]
-	}
+		 {
+			"Personal data": {
+				"name": {
+					"first name": "Raj",
+					"last name": "Sharma"
+				},
+				"DoB": "20-05-1997",
+				"Birth Place": "Mumbai"
+			},
+			"Exposure": [{
+				"Company Name": "XYZ",
+				"Number of Months": "6",
+				"Designation": "ABC"
+			}],
+			"Skills": {
+				"Programming": ["Python", "Go"],
+				"Design": ["Photoshop"],
+				"Languages": ["English", "Hindi"]
+
+			}
+		}
+	]
 }
