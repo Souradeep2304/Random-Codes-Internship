@@ -1,0 +1,60 @@
+<html>
+<title>My Webpage</title>
+<body>
+<script>
+var j,x,y;
+j= {
+	"CandidateResume": [{
+		 
+			"Personal data": {
+				"name": {
+					"first name": "Souradeep",
+					"last name": "Banerjee"
+				},
+				"DoB": "23-04-1998",
+				"Birth Place": "Kolkata"
+			},
+			"Exposure": [{
+				"Company Name": "AIS",
+				"Number of Months": "2",
+				"Designation": "Intern"
+			}],
+			"Skills": {
+				"Programming": ["C++","Go"],
+				"Design": null,
+				"Languages": ["English", "Hindi", "Bengali", "French"]
+
+			}
+		},
+
+		 {
+			"Personal data": {
+				"name": {
+					"first name": "Raj",
+					"last name": "Sharma"
+				},
+				"DoB": "20-05-1997",
+				"Birth Place": "Mumbai"
+			},
+			"Exposure": [{
+				"Company Name": "XYZ",
+				"Number of Months": "6",
+				"Designation": "ABC"
+			}],
+			"Skills": {
+				"Programming": ["Python", "Go"],
+				"Design": ["Photoshop"],
+				"Languages": ["English", "Hindi"]
+
+			}
+		}
+	]
+}
+console.log(j)
+document.write(j['CandidateResume'][0]['Skills']['Programming'])
+</script>
+
+
+<p1 id="test"></p1>
+</body>
+</html>
