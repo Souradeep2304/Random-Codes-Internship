@@ -14,7 +14,6 @@ char temp[100];				//to store reversed word
 char org[100];				//to store original word
 strcpy(org,string[i]);
 len=strlen(org);
-
 					//reversing the string
 for ( j = len - 1; j >= 0; j--)
   	{

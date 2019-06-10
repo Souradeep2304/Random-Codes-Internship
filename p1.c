@@ -8,8 +8,6 @@ void main()
 char string[100][100];
 int number_of_strings;
 int number_of_palindromes=0;
-
-
 					//taking in the strings
 printf("Enter the number of strings in the array:");
 scanf("%d",&number_of_strings);
